@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { motion } from "motion/react"
 import { Menu, X } from 'lucide-react';
 import buymecoffee from "../assets/images/coffee.jpg";
-
+import { name } from "../util/constant";
 const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
  
-  const menuItems = ['Home', 'About US', 'Contact'];
+  const menuItems = [
+    { title: 'Home', link: '/' },
+    { title: 'About', link: '/about' },
+    // { title: 'Contact', link: '/contact' }
+  ];
 
   return (
     <motion.header
     
-      className={`fixed   p-2  w-full z-50 transition-all duration-300 ${
+      className={`fixed  p-2  w-full z-50 transition-all duration-300 ${
         scrolled ? 'bg-white/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
@@ -25,18 +29,18 @@ const Header = () => {
           <div
             className="text-2xl font-bold bg-gradient-to-r from-stone-700 to-red-500 bg-clip-text text-transparent  "
           >
-            The_invictus__
+            {name}
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8   text-lg font-semibold">
+          <div className="hidden md:flex items-center space-x-8  text-lg font-semibold">
             {menuItems.map((item) => (
               <Link
-                key={item}
-                to={item.toLowerCase()}
-                className="  cursor-pointer transition-colors"
+              key={item.title}
+              to={item.link}
+                className="hover:underline underline-offset-4  cursor-pointer transition-colors"
               >
-                {item}
+                {item.title}
               </Link>
             ))}
            
@@ -48,9 +52,12 @@ const Header = () => {
             <div>
               <img className='h-7 mix-blend-multiply ' src={buymecoffee} alt="support button logo" />
             </div>
-            <div>
-              Support us
+            <a href="https://buymeacoffee.com/thecoderboy11" target='__blank'>
+            <div className='pr-4'>
+              Support
             </div>
+            </a>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,14 +81,13 @@ const Header = () => {
           className="pt-4 pb-3 space-y-3 ">
             {menuItems.map((item) => (
               <Link
-                key={item}
-                
-                to={item.toLowerCase()}
+              key={item.title}
+              to={item.link}
 
                 className="block  text-lg font-semibold cursor-pointer transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                {item}
+                {item.title}
               </Link>
             ))}
               <div className='flex justify-center items-center gap-x-1 font-bold border border-yellow-500  bg-yellow-400 text-lg rounded-3xl py-2 px-6
@@ -90,9 +96,11 @@ const Header = () => {
             <div>
               <img className='h-6 mix-blend-multiply ' src={buymecoffee} alt="" />
             </div>
-            <div>
-              Support us
+            <a href="https://buymeacoffee.com/thecoderboy11" target='__blank'>
+            <div className=''>
+              Support
             </div>
+            </a>
           </div>
             
           </div>
