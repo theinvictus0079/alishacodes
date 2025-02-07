@@ -34,7 +34,7 @@ const About = () => {
          flex flex-col justify-center  text-center px-4 "
         >
           <div className=" text-3xl font-bold underline underline-offset-8 text-red-500">
-            Hi, I'm Alihsa
+            I'm Alisha
           </div>
           <div className="text-lg md:text-xl font-bold font-mono">
             Software Engineer▪️Tech Blogger
