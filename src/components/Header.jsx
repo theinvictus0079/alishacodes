@@ -84,26 +84,30 @@ const Header = () => {
               key={item.title}
               to={item.link}
 
-                className="block  text-lg font-semibold cursor-pointer transition-colors"
+                className="block  text-xl mt-2 pl-3 font-semibold cursor-pointer transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.title}
               </Link>
             ))}
-              <div className='flex justify-center items-center gap-x-1 font-bold border border-yellow-500  bg-yellow-400 text-lg rounded-3xl py-2 px-6
+
+
+            <a className='' href="https://buymeacoffee.com/thecoderboy11" target='__blank'>
+              <div className='mt-5 flex justify-center items-center gap-x-1 font-bold border border-yellow-500  bg-yellow-400 text-lg rounded-3xl py-2 px-6
                          hover:text-white transition-all ease-in-out duration-400
           '>
             <div>
               <img className='h-6 mix-blend-multiply ' src={buymecoffee} alt="" />
             </div>
-            <a href="https://buymeacoffee.com/thecoderboy11" target='__blank'>
+            
             <div className=''>
               Support
             </div>
-            </a>
+           
           </div>
-            
+          </a>
           </div>
+         
     
 
         </motion.div>

@@ -34,14 +34,14 @@ const About = () => {
          flex flex-col justify-center  text-center px-4 "
         >
           <div className=" text-3xl font-bold underline underline-offset-8 text-red-500">
-            Alisha 👋🏻
+            Hi, I'm Alihsa
           </div>
           <div className="text-lg md:text-xl font-bold font-mono">
             Software Engineer▪️Tech Blogger
           </div>
 
 {/* socail icons */}
-          <div className=" flex flex-row justify-evenly items-center bg-white py-4 rounded-b-[30px] ">
+          <div className=" flex flex-row justify-evenly items-center py-4 rounded-b-[30px] ">
 
 
 {/* instagram*/}

@@ -8,7 +8,7 @@ const Home = () => {
   const portfolioWebsites = projects;
 
   return (
-    <div className="w-screen  flex flex-col items-center justify-center">
+    <div className="w-screen  flex flex-col items-center justify-center pb-12">
       <div className="flex flex-col gap-y-6 items-center justify-center space-y-4">
         <div className=" font-mono w-fit bg-gradient-to-r from-red-600  to-emerald-700 text-center text-white md:text-lg font-bold px-10 md:px-20 py-2 rounded-full">
           by @<span className="ml-1">{name}</span>
