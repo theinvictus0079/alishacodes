@@ -19,7 +19,7 @@ export const projects = [
     title: "techverse p18",
     image: i8,
     technologies: [" React▪️", "Tailwind CSS"],
-    liveUrl: "https://alisha17.vercel.app/",
+    liveUrl: "https://alisha18.vercel.app/",
     githubUrl: "https://github.com/codesalisha/Portfolio_18",
     cost: "free",
   },
