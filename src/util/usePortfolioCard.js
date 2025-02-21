@@ -5,6 +5,7 @@ import i4 from "../assets/images/portfoliowebsite/p14.png";
 import i5 from "../assets/images/portfoliowebsite/p15.png";
 import i7 from "../assets/images/portfoliowebsite/p17.png";
 import i8 from "../assets/images/portfoliowebsite/p18.png";
+import i9 from "../assets/images/portfoliowebsite/p19.png";
 
 export const projects = [
   {
@@ -21,6 +22,14 @@ export const projects = [
     technologies: [" React▪️", "Tailwind CSS"],
     liveUrl: "https://alisha18.vercel.app/",
     githubUrl: "https://github.com/codesalisha/Portfolio_18",
+    cost: "free",
+  },
+  {
+    title: "Real State p19",
+    image: i9,
+    technologies: [" React▪️", "Tailwind CSS"],
+    liveUrl: "https://alisha19.vercel.app/",
+    githubUrl: "https://github.com/codesalisha/Portfolio_19",
     cost: "free",
   },
   {
